@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="certiificates.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function showMore(id) {
+    const moreImages = document.getElementById(id);
+    moreImages.style.display = 'block'; // Show the additional images
+}
+
+function hideMore(id) {
+    const moreImages = document.getElementById(id);
+    moreImages.style.display = 'none'; // Hide the additional images
+}
+
+</script>
+
+<header class="header">
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Celebrations with Beautiful Mehndi Art</h1>
+            <p>Custom Designs for Weddings, Festivals, and Special Events</p><br>
+            <a href="https://surveyheart.com/form/666bbbc12686fb19e013de44" class="cta-button">Book Your Appointment</a>
+        </div>
+    </div>        
+</header>
+<hr>
+<nav class="first">
+    <a href="Portfolio.html">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="skill.html">Services</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Certificates.html">Portfolio</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="faq1.html">FAQ</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Contact1.html">Contact Me</a> &nbsp;&nbsp;&nbsp;&nbsp;
+</nav>
+
+<section id="portfolio" class="portfolio">
+    <h2>My Mehndi Portfolio</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item" onclick="showMore('more1')">
+            <img src="design1.jpg" alt="Mehndi Design 1">
+            <h3>Elegant Bridal Mehndi</h3>
+            <p>This design features intricate patterns with floral motifs.</p>
+        </div>
+        <div class="portfolio-item" onclick="showMore('more2')">
+            <img src="design2.jpg" alt="Mehndi Design 2">
+            <h3>Festive Pattern</h3>
+            <p>A vibrant design with bold lines for celebrations.</p>
+        </div>
+        <div class="portfolio-item" onclick="showMore('more3')">
+            <img src="design3.jpg" alt="Mehndi Design 3">
+            <h3>Traditional Indian Design</h3>
+            <p>Classic patterns showcasing cultural heritage.</p>
+        </div>
+        <!-- More items can be added here -->
+    </div>
+
+    <div class="more-images" id="more1" style="display: none;">
+        <h3>More Elegant Bridal Mehndi Designs</h3>
+        <img src="design1a.jpg" alt="More Design 1">
+        <img src="design1b.jpg" alt="More Design 2">
+        <button onclick="hideMore('more1')">See Less</button>
+    </div>
+    <div class="more-images" id="more2" style="display: none;">
+        <h3>More Festive Pattern Designs</h3>
+        <img src="design2a.jpg" alt="More Design 1">
+        <img src="design2b.jpg" alt="More Design 2">
+        <button onclick="hideMore('more2')">See Less</button>
+    </div>
+    <div class="more-images" id="more3" style="display: none;">
+        <h3>More Traditional Designs</h3>
+        <img src="design3a.jpg" alt="More Design 1">
+        <img src="design3b.jpg" alt="More Design 2">
+        <button onclick="hideMore('more3')">See Less</button>
+    </div>
+</section>
